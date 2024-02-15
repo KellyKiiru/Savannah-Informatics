@@ -1,1 +1,5 @@
-<p>album works!</p>
+<button (click)="getAlbums()">Get Albums</button>
+
+<ul *ngFor="let album of albumsData">
+  <li>{{ album.title }}</li>
+</ul>
