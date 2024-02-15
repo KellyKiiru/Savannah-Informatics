@@ -1,1 +1,7 @@
-<p>homepage works!</p>
+<app-login></app-login>
+
+<button (click)="getUsers()">Get Users</button>
+
+<ul *ngFor="let user of usersData">
+  <li>{{ user.name }}</li>
+</ul>
